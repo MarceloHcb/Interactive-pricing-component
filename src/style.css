@@ -11,8 +11,9 @@ html{
     align-items: center;
     flex-direction: column;
 }
+
 p{
-    color: hsl(225, 20%, 60%);   
+    color: hsl(225, 20%, 60%);      
 }
 
 .top{
@@ -53,7 +54,6 @@ p{
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
 .content-top{   
     display: flex;    
     align-items: center;
@@ -82,7 +82,7 @@ p{
     display: flex;
     justify-content: flex-end;
     align-items:space-between;
-    gap: 15px;    
+    gap: 15px;      
 }
 .range{
     position: relative;
@@ -172,7 +172,7 @@ hr{
 }
 .checked-items p::before{
     content: "";
-    background-image: url(src/images/icon-check.svg);
+    background-image: url(./images/icon-check.svg);
     background-repeat: no-repeat;
     position: absolute;      
     margin-top: 15px;
@@ -191,53 +191,60 @@ button{
 }
 @media (max-width: 550px){  
     .content-top{          
-        margin-bottom: 110px;
+        margin-bottom: 50px;
+    }
+    .top img{
+        width: 18vh;
+        position: absolute;
+        top: 3.5rem;
     }
     .range input{
-        top: -85px;
+        top: -40px;
         position: absolute;
         width: 330px;
         margin-left: 30px;
     }    
     #progressBar{   
-        margin-left: 21px; 
-          
+        margin-left: 20px;           
     }     
     .top{
         width: 100%;
-        gap: 20px;
-        padding: 90px;
+        gap: 10px;
+        padding: 80px;
     }
     .top h1{
         font-size: 25px; 
     }
-    .p-top{
+    .top p{
         text-align: center;
-        max-width: 40%;
+        width: 50%;
+    }
+    .mid-info{  
+        margin: 20px;
     }
     .bg{           
         height: 45vh;
     }
     .content{     
         width: 43vh;
-        height: 58vh;
+        height: 65vh;
     }
     .content-top{   
         flex-direction: column;
         gap: 10px; 
     }
     #progressBar{
-        top: 128px;
+        top: 115px;
     }
     .value{
         position: absolute;
-        top: 150px;
+        top: 140px;
+    }
+    #value{
+        font-size: 35px;         
     }
     .content-bottom{      
-        gap: 20px;
+        gap: 10px;
         flex-direction: column;
     }    
-}
-@media (max-width: 480px){
-
 }
