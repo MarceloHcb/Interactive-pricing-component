@@ -102,7 +102,7 @@ p{
 }
 .range input::-webkit-slider-thumb{
     appearance: none;
-    background: url(src/images/icon-slider.svg);
+    background: url(./images/icon-slider.svg);
     background-position: center;
     background-repeat: no-repeat;
     width: 40px;
