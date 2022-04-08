@@ -46,7 +46,7 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80vh;
+    width: 70vh;
     height: 50vh;
     background-color: white;
     border-radius: 10px;
@@ -109,6 +109,9 @@ p{
     height: 40px;
     border-radius: 50%;
     background-color: rgb(22, 120, 120);      
+}
+.range input::-webkit-slider-thumb:hover{
+    background-color:rgb(90, 223, 223);
 }
 #progressBar{    
     height: 8px;
