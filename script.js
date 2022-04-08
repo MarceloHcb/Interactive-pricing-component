@@ -5,12 +5,12 @@ const spann = document.getElementById("span")
 const progressBar = document.getElementById("progressBar")
 console.log(spann)
 console.log(circle)
-progressBar.style.width = "30px"
+progressBar.style.width = "34px"
 
 range.oninput = (()=>{
     const rangeValue = range.value
     value.textContent = `$${rangeValue},00` 
-    progressBar.style.width = rangeValue*1.8 + "px"
+    progressBar.style.width = rangeValue*2.1 + "px"
 })
 spann.addEventListener("click",()=>{    
      spann.classList.toggle("bgClick")     

@@ -45,17 +45,24 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vh;
+    width: 80vh;
     height: 50vh;
     background-color: white;
     border-radius: 10px;
     gap: 20px;
     position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .content-top{   
     display: flex;    
     align-items: center;
+    margin-bottom: 50px;
     gap: 100px;
+}
+.content-top p{
+   font-size: 17px;  
+   font-weight: 800; 
 }
 .value{
     display: flex;
@@ -68,8 +75,14 @@ p{
 }
 .content-mid{   
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    flex-direction: column;   
+    gap: 30px;    
+}
+.mid-info{    
+    display: flex;
+    justify-content: flex-end;
+    align-items:space-between;
+    gap: 15px;    
 }
 .range{
     position: relative;
@@ -79,7 +92,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 460px;
     appearance: none;
     height: 8px;
     border-radius: 10px;
@@ -95,9 +108,7 @@ p{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: rgb(22, 120, 120);
-          
-    
+    background-color: rgb(22, 120, 120);      
 }
 #progressBar{    
     height: 8px;
@@ -112,12 +123,7 @@ p{
    right: 0;
    top: -15%;
 }
-.mid-info{    
-    display: flex;
-    justify-content: space-between;
-    align-items:space-between;
-    gap: 15px;
-}
+
 .DiscountText{
     background-color: hsl(14, 92%, 95%);
     color: hsl(15, 100%, 70%);
@@ -164,13 +170,11 @@ hr{
     position: relative;
     gap: 50px;
 }
-
 .checked-items p::before{
     content: "";
     background-image: url(src/images/icon-check.svg);
     background-repeat: no-repeat;
     position: absolute;      
-    
     margin-top: 15px;
     left: -30px;   
     width: 200px;
@@ -185,19 +189,20 @@ button{
     border-radius: 30px;
     font-weight: 800;
 }
-@media (max-width: 550px){
-    .container{
-
-    }
-   
-    .content-top{   
-        
+@media (max-width: 550px){  
+    .content-top{          
         margin-bottom: 110px;
     }
     .range input{
-        top: -80px;
+        top: -85px;
         position: absolute;
-    }
+        width: 330px;
+        margin-left: 30px;
+    }    
+    #progressBar{   
+        margin-left: 21px; 
+          
+    }     
     .top{
         width: 100%;
         gap: 20px;
@@ -206,7 +211,6 @@ button{
     .top h1{
         font-size: 25px; 
     }
-
     .p-top{
         text-align: center;
         max-width: 40%;
@@ -214,14 +218,13 @@ button{
     .bg{           
         height: 45vh;
     }
-    .content{
-     
+    .content{     
         width: 43vh;
         height: 58vh;
     }
     .content-top{   
-    flex-direction: column;
-    gap: 10px; 
+        flex-direction: column;
+        gap: 10px; 
     }
     #progressBar{
         top: 128px;
@@ -233,6 +236,8 @@ button{
     .content-bottom{      
         gap: 20px;
         flex-direction: column;
-    }
-    
+    }    
+}
+@media (max-width: 480px){
+
 }
