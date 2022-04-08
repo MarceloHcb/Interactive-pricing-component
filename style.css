@@ -12,8 +12,9 @@ html{
     flex-direction: column;
 }
 p{
-    color: hsl(225, 20%, 60%);
+    color: hsl(225, 20%, 60%);   
 }
+
 .top{
     display: flex;
     flex-direction: column;
@@ -44,8 +45,8 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50vh;
-    height: 40vh;
+    width: 100vh;
+    height: 50vh;
     background-color: white;
     border-radius: 10px;
     gap: 20px;
@@ -74,7 +75,7 @@ p{
     position: relative;
 }
 .range input{
-    position: relative;
+   position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,7 +95,8 @@ p{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: rgb(22, 120, 120);    
+    background-color: rgb(22, 120, 120);
+          
     
 }
 #progressBar{    
@@ -102,7 +104,7 @@ p{
     border-radius: 10px;
     background-color: rgb(90, 223, 223);
     position: absolute;   
-    z-index: 1;
+    z-index: 1;   
 }
 .icon-slider{
    width: 50px;   
@@ -167,7 +169,8 @@ hr{
     content: "";
     background-image: url(src/images/icon-check.svg);
     background-repeat: no-repeat;
-    position: absolute;    
+    position: absolute;      
+    
     margin-top: 15px;
     left: -30px;   
     width: 200px;
@@ -182,6 +185,54 @@ button{
     border-radius: 30px;
     font-weight: 800;
 }
-@media (max-width: 480px){
+@media (max-width: 550px){
+    .container{
+
+    }
+   
+    .content-top{   
+        
+        margin-bottom: 110px;
+    }
+    .range input{
+        top: -80px;
+        position: absolute;
+    }
+    .top{
+        width: 100%;
+        gap: 20px;
+        padding: 90px;
+    }
+    .top h1{
+        font-size: 25px; 
+    }
+
+    .p-top{
+        text-align: center;
+        max-width: 40%;
+    }
+    .bg{           
+        height: 45vh;
+    }
+    .content{
+     
+        width: 43vh;
+        height: 58vh;
+    }
+    .content-top{   
+    flex-direction: column;
+    gap: 10px; 
+    }
+    #progressBar{
+        top: 128px;
+    }
+    .value{
+        position: absolute;
+        top: 150px;
+    }
+    .content-bottom{      
+        gap: 20px;
+        flex-direction: column;
+    }
     
 }

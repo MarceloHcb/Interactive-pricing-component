@@ -10,7 +10,7 @@ progressBar.style.width = "30px"
 range.oninput = (()=>{
     const rangeValue = range.value
     value.textContent = `$${rangeValue},00` 
-    progressBar.style.width = rangeValue*2 + "px"
+    progressBar.style.width = rangeValue*1.8 + "px"
 })
 spann.addEventListener("click",()=>{    
      spann.classList.toggle("bgClick")     
