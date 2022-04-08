@@ -142,6 +142,9 @@ p{
 .bg-circle:hover{
     background-color: rgb(90, 223, 223);
 }
+.active{
+    background-color:  rgb(90, 223, 223);;
+}
 .bgClick{
     transform: translateX(25px);
 }
@@ -191,7 +194,7 @@ button{
 }
 @media (max-width: 550px){  
     .content-top{          
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
     .top img{
         width: 18vh;
@@ -203,14 +206,15 @@ button{
         position: absolute;
         width: 330px;
         margin-left: 30px;
+        
     }    
-    #progressBar{   
-        margin-left: 20px;           
+    #progressBar{            
+        display: none;              
     }     
     .top{
         width: 100%;
         gap: 10px;
-        padding: 80px;
+        padding: 90px;
     }
     .top h1{
         font-size: 25px; 
@@ -238,7 +242,7 @@ button{
     }
     .value{
         position: absolute;
-        top: 140px;
+        top: 200px;
     }
     #value{
         font-size: 35px;         
