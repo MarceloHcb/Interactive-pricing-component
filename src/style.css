@@ -261,10 +261,8 @@ button{
         top: -40px;
         position: absolute;
         width: 260px;
-        margin-left: 30px;
-        
-    }    
-     
+        margin-left: 30px;        
+    }         
     .top{
         width: 100%;
         gap: 10px;
@@ -296,7 +294,7 @@ button{
     }
     .value{
         position: absolute;
-        top: 160px;
+        top: 120px;
     }
     #value{
         font-size: 35px;         
