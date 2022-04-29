@@ -255,3 +255,55 @@ button{
         flex-direction: column;
     }    
 }
+@media (max-width: 400px){  
+   
+    .range input{
+        top: -40px;
+        position: absolute;
+        width: 260px;
+        margin-left: 30px;
+        
+    }    
+     
+    .top{
+        width: 100%;
+        gap: 10px;
+        padding: 90px;
+    }
+    .top h1{
+        font-size: 25px; 
+    }
+    .top p{
+        text-align: center;
+        width: 50%;
+    }
+    .mid-info{  
+        margin: 20px;
+    }
+    .bg{           
+        height: 45vh;
+    }
+    .content{     
+        width: 50vh;
+        height: 80vh;
+    }
+    .content-top{   
+        flex-direction: column;
+        gap: 10px; 
+    }
+    #progressBar{
+        top: 115px;
+    }
+    .value{
+        position: absolute;
+        top: 160px;
+    }
+    #value{
+        font-size: 35px;         
+    }
+    .content-bottom{      
+        gap: 10px;
+        flex-direction: column;
+    }    
+}
+
