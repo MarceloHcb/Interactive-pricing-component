@@ -283,18 +283,17 @@ button{
     }
     .content{     
         width: 50vh;
-        height: 80vh;
+        height: 70vh;
     }
     .content-top{   
-        flex-direction: column;
-        gap: 10px; 
+        flex-direction: column;       
     }
     #progressBar{
-        top: 115px;
+        top: 110px;
     }
     .value{
         position: absolute;
-        top: 160px;
+        top: 30%;
     }
     #value{
         font-size: 35px;         
